@@ -1,4 +1,6 @@
 
+//If you're setting up your own twitter bot, you'll need to fill out the API keys below provided by Twitter
+
 module.exports = {
   consumer_key:         '...', //Copy & paste the consumer key provided from twitter
   consumer_secret:      '...', //Copy & paste the consumer secret key provided from twitter
