@@ -14,7 +14,11 @@ var tweet = {
 T.post('statuses/update', tweet, gotData);
 
 function gotData(err, data, response) {
-  console.log(data);
-  console.log('My twitter bot has finished!');
+	if (err){
+		console.log("Something went wrong!")
+	} else {
+  		console.log('Your tweet has posted!');
+  		console.log('My twitter bot has finished!');
+	}
 };
 
