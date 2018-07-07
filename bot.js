@@ -1,12 +1,7 @@
 console.log('My twitter bot has started up!');
 
-var Twit = require('twit')
+var Twit = require('twit');
+
+var config = require('./config');
  
-var T = new Twit({
-  consumer_key:         '...',
-  consumer_secret:      '...',
-  access_token:         '...',
-  access_token_secret:  '...',
-  timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
-  strictSSL:            true,     // optional - requires SSL certificates to be valid.
-})
+var T = new Twit(config);
