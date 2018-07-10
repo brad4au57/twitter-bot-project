@@ -8,5 +8,5 @@ module.exports = {
   access_token_secret:  '...', //Generates with new access token then copy & paste from twitter
   // timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
   // strictSSL:            true,     // optional - requires SSL certificates to be valid.
-
+  userName: "...Your username here..."
 }
