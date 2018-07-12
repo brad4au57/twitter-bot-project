@@ -8,7 +8,7 @@ const myUsername = require('./config').userName;
 
 //Turns on the stream to see when people follow me
 stream.on('follow', followReply);
-console.log('Your twitter bot has started up!');
+/* console.log('Your twitter bot has started up!'); */ //Used for testing that bot has started
 
 //This is the function that sends the reply message
 function followReply (eventMsg){
@@ -25,6 +25,6 @@ function followReply (eventMsg){
   	
 	  T.post('direct_messages/new', obj);
 
-	  console.log('Message sent!');
+      /*  console.log('Message sent!');    */ //Used to test that my message was sent to the new follower
   }  
 }
