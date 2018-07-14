@@ -9,8 +9,8 @@ var T = new Twit(config);
 /*** Used to get tweets from Twitter ***/
 
 var params = {
-	q: '#NodeJS',
-	count: 10
+	q: '#NodeJS', //Here you can define your query/search terms
+	count: 10     //For count you can specify how many results you'd like to return from search
 };
 
 T.get('search/tweets', params, gotData);
